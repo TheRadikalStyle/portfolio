@@ -2715,3 +2715,9 @@ article img.pull-right, article .align-right {
 }
 
 /* Theme Styler :: End */
+
+
+/* CUSTOM STYLE */
+.footer-social{
+  font-size: 30px;
+}
