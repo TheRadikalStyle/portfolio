@@ -1,0 +1,57 @@
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.card-availability{
+  display: inline-block;
+  position: relative;
+  /*width: 50%;*/
+  height: auto;
+  background-color: #F5F5F5; /* Material Gray 100 */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #888888;
+  margin-bottom: 20px;
+}
+
+.card-availability-text{
+  display: flex;
+  padding: 2px;
+}
+
+.card-availability-text > .mdi{
+  font-size: 14pt;
+  margin-right: 8px;
+}
+
+.card-availability-text > .store-button{
+  position: absolute;
+  font-size: 14pt;
+  right: 8px;
+}
+
+
+.cardview{
+  display: inline-block;
+  position: relative;
+  /*width: 50%;*/
+  height: auto;
+  background-color: #F5F5F5; /* Material Gray 100 */
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.slick-carousel{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: auto;
+  max-width: 300px;
+  min-width: 200px;
+}
