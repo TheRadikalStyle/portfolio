@@ -86,6 +86,10 @@ footer{
   height: auto;
 }
 
-@media  {
-
+@media screen and (max-width: 767px) {
+  .item-thumbs {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
