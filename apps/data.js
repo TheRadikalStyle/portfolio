@@ -20,12 +20,12 @@ var alertacovid19 = new Vue({
        { img: 'alertacovid19-android-5.png' }
      ],
      carouselIos:[
-       { img: 'alertacovid19-ios-1.png' },
-       { img: 'alertacovid19-ios-2.png' },
-       { img: 'alertacovid19-ios-3.png' },
-       { img: 'alertacovid19-ios-5.png' },
-       { img: 'alertacovid19-ios-6.png' },
-       { img: 'alertacovid19-ios-7.png' }
+       { img: 'alertacovid19-ios-1.PNG' },
+       { img: 'alertacovid19-ios-2.PNG' },
+       { img: 'alertacovid19-ios-3.PNG' },
+       { img: 'alertacovid19-ios-5.PNG' },
+       { img: 'alertacovid19-ios-6.PNG' },
+       { img: 'alertacovid19-ios-7.PNG' }
      ],
   },
 });
