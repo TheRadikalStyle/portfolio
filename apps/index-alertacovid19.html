@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
+  <!-- VueJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -53,11 +55,11 @@
     <!-- CONTENT -->
 
 
-    <div class="container">
+    <div id="data-alertacovid19" class="container">
 
       <section id="section-title">
         <div class="row">
-          <div class="apps-title"><h3>Alerta COVID-19</h3></div>
+          <div class="apps-title"><h3>{{ title }}</h3></div>
         </div>
         <div class="row">
           <div class="card-availability">
@@ -71,48 +73,30 @@
       <section id="section-summary">
         <div class="row">
           <div class="summary">
-            <p>Aplicación nativa</p>
-            <p>Alerta COVID-19 nace al intentar ayudar a la Secretaría de Salud de
-               Nuevo León a tener una app que ofrezca mejor interacción al usuario
-               para que use el chat que se implementó, al igual que ayudar mejorar
-               las estadisticas de uso dando un mejor acceso a la información de
-               casos a través de una interfáz amigable.</p>
+            <p>{{ appType }}</p>
+            <p>{{ summary }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-images">
+        <div class="container">
+          <p class="screenshots-title">Screenshots Android</p>
+          <div class="row">
+              <div class="slick-carousel">
+                <img v-for="imagen in carouselDroid" v-bind:src="'../img/works/full/alertacovid19/' + imagen.img" />
+              </div>
+          </div>
+
+          <p class="screenshots-title">Screenshots iOS</p>
+          <div class="row">
+            <div class="slick-carousel">
+              <img v-for="imagen in carouselIos" v-bind:src="'../img/works/full/alertacovid19/' + imagen.img" />
+            </div>
           </div>
         </div>
       </section>
     </div>
-
-    <section id="section-images">
-      <div class="container">
-        <p class="screenshots-title">Screenshots Android</p>
-        <div class="row">
-            <div class="slick-carousel">
-              <img src="../img/works/full/alertacovid19/alertacovid19-android-1.png" />
-              <img src="../img/works/full/alertacovid19/alertacovid19-android-2.png" />
-              <img src="../img/works/full/alertacovid19/alertacovid19-android-3.png" />
-              <img src="../img/works/full/alertacovid19/alertacovid19-android-4.png" />
-              <img src="../img/works/full/alertacovid19/alertacovid19-android-5.png" />
-            </div>
-        </div>
-
-        <p class="screenshots-title">Screenshots iOS</p>
-        <div class="row">
-          <div class="slick-carousel">
-            <img src="../img/works/full/alertacovid19/alertacovid19-ios-1.PNG" />
-            <img src="../img/works/full/alertacovid19/alertacovid19-ios-2.PNG" />
-            <img src="../img/works/full/alertacovid19/alertacovid19-ios-3.PNG" />
-            <img src="../img/works/full/alertacovid19/alertacovid19-ios-5.PNG" />
-            <img src="../img/works/full/alertacovid19/alertacovid19-ios-6.PNG" />
-            <img src="../img/works/full/alertacovid19/alertacovid19-ios-7.PNG" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
 
 <!-- END CONTENT -->
 
@@ -150,6 +134,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../js/slick/slick.min.js"></script>
+<!-- Vue Scripts -->
+<script src="data.js"></script>
 
 <script type="text/javascript">
  $(document).ready(function(){
