@@ -5,7 +5,7 @@
   <title>David's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="author" content="David Ochoa" />
 
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
@@ -21,6 +21,9 @@
   <link rel="shortcut icon" href="ico/favicon.png" />
   <!-- Material Design Icons -->
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
+  <!-- VueJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <!-- Custom CSS -->
   <link href="css/custom.css" rel="stylesheet" />
 
   <!-- =======================================================
@@ -50,338 +53,127 @@
           </div>
           <div class="span8">
             <div class="navbar navbar-static-top">
-              <!--<div class="navigation">
-              <nav>
-              <ul class="nav topnav">
-              <li class="dropdown active">
-              <a href="index.html">Home <i class="icon-angle-down"></i></a>
-              <ul class="dropdown-menu">
-              <li><a href="index-alt2.html">Homepage 2</a></li>
-              <li><a href="index-alt3.html">Homepage 3</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-          <a href="#">Features <i class="icon-angle-down"></i></a>
-          <ul class="dropdown-menu">
-          <li><a href="typography.html">Typography</a></li>
-          <li><a href="table.html">Table</a></li>
-          <li><a href="components.html">Components</a></li>
-          <li><a href="animations.html">56 Animations</a></li>
-          <li><a href="icons.html">Icons</a></li>
-          <li><a href="icon-variations.html">Icon variations</a></li>
-          <li class="dropdown"><a href="#">3 Sliders <i class="icon-angle-right"></i></a>
-          <ul class="dropdown-menu sub-menu-level1">
-          <li><a href="index.html">Nivo slider</a></li>
-          <li><a href="index-alt2.html">Slit slider</a></li>
-          <li><a href="index-alt3.html">Parallax slider</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-  <a href="#">Pages <i class="icon-angle-down"></i></a>
-  <ul class="dropdown-menu">
-  <li><a href="about.html">About us</a></li>
-  <li><a href="pricingbox.html">Pricing boxes</a></li>
-  <li><a href="testimonials.html">Testimonials</a></li>
-  <li><a href="404.html">404</a></li>
-</ul>
-</li>
-<li class="dropdown">
-<a href="#">Portfolio <i class="icon-angle-down"></i></a>
-<ul class="dropdown-menu">
-<li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-<li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-<li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-<li><a href="portfolio-detail.html">Portfolio detail</a></li>
-</ul>
-</li>
-<li class="dropdown">
-<a href="#">Blog <i class="icon-angle-down"></i></a>
-<ul class="dropdown-menu">
-<li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-<li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
-<li><a href="post-left-sidebar.html">Post left sidebar</a></li>
-<li><a href="post-right-sidebar.html">Post right sidebar</a></li>
-</ul>
-</li>
-<li>
-<a href="contact.html">Contact </a>
-</li>
-</ul>
-</nav>
-</div> -->
-<!-- end navigation -->
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- end header -->
-
-<!-- Android Projects -->
-<div class="row">
-  <div class="span12">
-    <h4 class="heading">Proyectos <strong>Android </strong><span class="mdi mdi-android"></span></h4>
-    <div class="row">
-      <section id="projects">
-        <ul id="thumbs" class="portfolio">
-
-
-          <!-- DASHRX -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-dashrx.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-dashrx.png" />
+              <!-- end navigation -->
             </div>
-          </li>
-
-          <!-- CHECA TU PESO -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-imc.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-imc.png" />
-            </div>
-          </li>
-
-          <!-- CODIGO EMBOLIA -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-ictus.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-ictus.png" />
-            </div>
-          </li>
-
-          <!-- LACTANCIA EDUCATIVA -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-lactapp.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-lactancia.png" />
-            </div>
-          </li>
-
-          <!-- ENCUENTRO -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-eei.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-EEI.png" />
-            </div>
-          </li>
-
-          <!-- Alerta COVID-19 -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-alertacovid19.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-alertacovid19.png" />
-            </div>
-          </li>
-
-          <!-- Registro de entrega -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-registrodeentrega.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-registrodeentrega.png" />
-            </div>
-          </li>
-
-        </ul>
-      </section>
-    </div>
-  </div>
-</div>
-<!-- End Android Projects -->
-
-
-<!-- Start iOS projects -->
-<div class="row">
-  <div class="span12">
-    <h4 class="heading">Proyectos <strong>iOS </strong><span class="mdi mdi-apple"></span></h4>
-    <div class="row">
-      <section id="projects">
-        <ul id="thumbs" class="portfolio">
-
-          <!-- CHECA TU PESO -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-imc.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-imc.png" />
-            </div>
-          </li>
-
-          <!-- CODIGO EMBOLIA -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-ictus.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-ictus.png" />
-            </div>
-          </li>
-
-          <!-- LACTANCIA EDUCATIVA -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-lactapp.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/android-lactancia.png" />
-            </div>
-          </li>
-
-          <!-- ALERTA COVID19 -->
-          <li class="item-thumbs span3 design">
-            <a class="hover-wrap" onclick="window.location.href = 'apps/index-alertacovid19.html'">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-            </a>
-            <div>
-              <img src="img/works/thumbs/ios-alertacovid19.png" />
-            </div>
-          </li>
-
-
-        </ul>
-      </section>
-    </div>
-  </div>
-</div>
-<!--End iOS Projects -->
-
-<!-- Start web projects -->
-<div class="row">
-  <div class="span12">
-    <h4 class="heading">Proyectos <strong>Web </strong><span class="mdi mdi-web"></span></h4>
-    <div class="row">
-      <section id="projects">
-        <ul id="thumbs" class="portfolio">
-
-          <!-- Item Project and Filter Name -->
-          <li class="item-thumbs span3 design" data-id="id-1" data-type="web">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Apoyos" href="img/works/full/web-apoyos-2.png">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="img/works/thumbs/web-apoyos.png" alt="Sistema de gestión de datos de los apoyos otorgados por el departamento de Gestoría" >
-          </li>
-          <!-- End Item Project -->
-
-          <!-- Item Project and Filter Name -->
-          <li class="item-thumbs span3 design" data-id="id-2" data-type="web">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Alojamiento de nóminas" href="img/works/full/web-pdf-2.png">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="img/works/thumbs/web-pdf.png" alt="">
-          </li>
-          <!-- End Item Project -->
-
-          <!-- Item Project and Filter Name -->
-          <li class="item-thumbs span3 design" data-id="id-3" data-type="web">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Credenciales" href="img/works/full/web-credenciales-2.png">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="img/works/thumbs/web-credenciales.png" alt="">
-          </li>
-          <!-- End Item Project -->
-
-          <!-- Item Project and Filter Name -->
-          <li class="item-thumbs span3 design" data-id="id-4" data-type="web">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Sistema LDPR" href="img/works/full/web-ldrp-1.png">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="img/works/thumbs/web-ldrp.png" alt="">
-          </li>
-          <!-- End Item Project -->
-
-
-          <!-- Item Project and Filter Name -->
-          <li class="item-thumbs span3 design" data-id="id-5" data-type="web">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Página web Asenco Integram" href="img/works/full/web-asenco-1.png">
-              <span class="overlay-img"></span>
-              <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="img/works/thumbs/web-asenco.png" alt="">
-          </li>
-          <!-- End Item Project -->
-
-        </ul>
-      </section>
-    </div>
-  </div>
-</div>
-<!--End web Projects -->
-
-</div>
-<footer>
-  <div class="container">
-    <div class="row"></div>
-  </div>
-  <div id="sub-footer">
-    <div class="container">
-      <div class="row">
-        <div class="span6">
-          <div class="copyright">
-            <p>
-              <span>2020 - David Ochoa</span>
-            </p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
-            -->
-            Flattern template - Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>
       </div>
-      <div class="span6">
-        <ul class="social-network">
-          <li><a href="https://www.linkedin.com/in/theradikalstyle" data-placement="bottom" title="Linkedin"><i class="mdi mdi-linkedin-box footer-social"></i></a></li>
-          <li><a href="https://github.com/TheRadikalStyle" data-placement="bottom" title="GitHub"><i class="mdi mdi-github-circle footer-social"></i></a></li>
-        </ul>
+    </header>
+    <!-- end header -->
+
+    <!-- Android Projects -->
+    <div class="row">
+      <div class="span12">
+        <h4 class="heading">Proyectos <strong>Android </strong><span class="mdi mdi-android"></span></h4>
+        <div class="row">
+          <section id="android-projects"> <!-- id=projects -->
+            <ul id="thumbs" class="portfolio">
+
+              <!-- TEMPLATE FOR VUE -->
+              <li v-for="project in androidProjects" class="item-thumbs span2 design">
+                <a class="hover-wrap" v-bind:onclick="project.url" >
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
+                </a>
+                <div>
+                  <img v-bind:src="'img/works/thumbs/' + project.thumb" />
+                </div>
+              </li>
+
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- End Android Projects -->
+
+
+    <!-- Start iOS projects -->
+    <div class="row">
+      <div class="span12">
+        <h4 class="heading">Proyectos <strong>iOS </strong><span class="mdi mdi-apple"></span></h4>
+        <div class="row">
+          <section id="iOS-projects">
+            <ul id="thumbs" class="portfolio">
+
+              <!-- TEMPLATE FOR VUE -->
+              <li v-for="project in iOSProjects" class="item-thumbs span2 design">
+                <a class="hover-wrap" v-bind:onclick="project.url" >
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
+                </a>
+                <div>
+                  <img v-bind:src="'img/works/thumbs/' + project.thumb" />
+                </div>
+              </li>
+
+
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!--End iOS Projects -->
+
+    <!-- Start web projects -->
+    <div class="row">
+      <div class="span12">
+        <h4 class="heading">Proyectos <strong>Web </strong><span class="mdi mdi-web"></span></h4>
+        <div class="row">
+          <section id="web-projects">
+            <ul id="thumbs" class="portfolio">
+
+              <!-- TEMPLATE FOR VUE -->
+              <li v-for="project in webProjects" class="item-thumbs span2 design">
+                <a class="hover-wrap" v-bind:onclick="project.url" >
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
+                </a>
+                <div>
+                  <img v-bind:src="'img/works/thumbs/' + project.thumb" />
+                </div>
+              </li>
+
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!--End web Projects -->
+
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row"></div>
+    </div>
+    <div id="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="span6">
+            <div class="copyright">
+              <p>
+                <span>2020 - David Ochoa</span>
+              </p>
+              <div class="credits">
+                <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+              -->
+              Flattern template - Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+        <div class="span6">
+          <ul class="social-network">
+            <li><a href="https://www.linkedin.com/in/theradikalstyle" data-placement="bottom" title="Linkedin"><i class="mdi mdi-linkedin-box footer-social"></i></a></li>
+            <li><a href="https://github.com/TheRadikalStyle" data-placement="bottom" title="GitHub"><i class="mdi mdi-github-circle footer-social"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </footer>
 </div>
 <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
@@ -403,9 +195,9 @@
 <script src="js/jquery.ba-cond.min.js"></script>
 <script src="js/jquery.slitslider.js"></script>
 <script src="js/animate.js"></script>
-
 <!-- Template Custom JavaScript File -->
 <script src="js/custom.js"></script>
-
+<!-- Vue Scripts -->
+<script src="index.js"></script>
 </body>
 </html>
