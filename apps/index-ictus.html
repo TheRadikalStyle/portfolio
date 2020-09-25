@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
+  <!-- VueJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 </head>
 <body>
 
@@ -54,10 +56,10 @@
     <!-- CONTENT -->
 
 
-    <div class="container">
+    <div id="data-ictus" class="container">
 
       <section id="section-title">
-        <div class="row"><div class="apps-title"><h3>Código ICTUS</h3></div></div>
+        <div class="row"><div class="apps-title"><h3>{{ title }}</h3></div></div>
         <div class="row">
           <div class="card-availability">
             <div><p>Plataforma</p></div>
@@ -70,9 +72,8 @@
       <section id="section-summary">
         <div class="row">
           <div class="summary">
-            <p>Aplicación nativa</p>
-            <p>Aplicación de ayuda a la población para detectar sintomas de una
-              embolia cerebral (ICTUS).</p>
+            <p>{{ appType }}</p>
+            <p>{{ summary }}</p>
           </div>
         </div>
       </section>
@@ -148,6 +149,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../js/slick/slick.min.js"></script>
+<!-- Vue Scripts -->
+<script src="data.js"></script>
 
 <script type="text/javascript">
  $(document).ready(function(){

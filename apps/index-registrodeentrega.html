@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
+  <!-- VueJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -53,7 +55,7 @@
     <!-- CONTENT -->
 
 
-    <div class="container">
+    <div id="data-registrodeentrega" class="container">
 
       <section id="section-title">
         <div class="row">
@@ -70,29 +72,23 @@
       <section id="section-summary">
         <div class="row">
           <div class="summary">
-            Aplicación nativa
-            Aplicación realizada para apoyar al equipo de colaboradores que registran
-            a las personas que reciben una tarjeta de bonificación entregada por
-            el gobierno de Nuevo León para apoyar en la contingencia COVID-19.
+            <p>{{ appType }}</p>
+            <p>{{ summary }}</p>
           </div>
         </div>
       </section>
-    </div>
 
     <section id="section-images">
       <div class="container">
         <p class="screenshots-title">Screenshots Android</p>
         <div class="row">
             <div class="slick-carousel">
-              <img src="../img/works/full/registrodeentrega/android-registrodeentrega_1.png" />
-              <img src="../img/works/full/registrodeentrega/android-registrodeentrega_2.png" />
-              <img src="../img/works/full/registrodeentrega/android-registrodeentrega_3.png" />
-              <img src="../img/works/full/registrodeentrega/android-registrodeentrega_4.png" />
-              <img src="../img/works/full/registrodeentrega/android-registrodeentrega_5.png" />
+              <img v-for="imagen in carouselDroid" v-bind:src="'../img/works/full/registrodeentrega/' + imagen.img" />
             </div>
         </div>
       </div>
     </section>
+    </div>
 
 
 
@@ -130,11 +126,13 @@
       </div>
     </div>
   </footer>
-</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../js/slick/slick.min.js"></script>
+<!-- Vue Scripts -->
+<script src="data.js"></script>
 
 <script type="text/javascript">
  $(document).ready(function(){
