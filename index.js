@@ -36,7 +36,8 @@ var webProjects = new Vue({
       { name: 'Nóminas', id: '2', url: 'window.location.href="webs/index-.html"', thumb: 'web-nominas.png' },
       { name: 'Gafetes', id: '3', url: 'window.location.href="webs/index-.html"', thumb: 'web-gafetes.png' },
       { name: 'LDRP', id: '4', url: 'window.location.href="webs/index-.html"', thumb: 'web-ldrp.png' },
-      { name: 'Asenco', id: '4', url: 'window.location.href="webs/index-.html"', thumb: 'web-asenco.png' },
+      { name: 'Seguimiento de trámites', url:'window.location.href="webs/index-tramites.html"', thumb: 'web-tramites.png' },
+      { name: 'Asenco', id: '4', url: 'window.location.href="webs/index-.html"', thumb: 'web-asenco.png' }
     ],
   },
 });
