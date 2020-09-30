@@ -86,10 +86,31 @@ footer{
   height: auto;
 }
 
+.span12{
+  width: auto;
+  overflow-x: hidden;
+}
+
+.project-title{
+  width: auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  padding: 2px;
+}
+.project-title > p{
+  font-size: 1.2vw; /*https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
+}
+
 @media screen and (max-width: 767px) {
   .item-thumbs {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .project-title > p{
+    font-size: 20px;
   }
 }

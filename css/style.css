@@ -938,8 +938,8 @@ form#commentform textarea {
 }
 
 #thumbs {
-  margin: 0;
-  padding: 0;
+  margin: 8px;
+  padding: 16px;
 }
 
 #thumbs li {
@@ -1126,7 +1126,9 @@ h4.heading strong {
 }
 
 .heading {
+  margin-top: 8px;
   margin-bottom: 30px;
+  margin-left: 8px;
 }
 
 .heading {
