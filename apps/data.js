@@ -170,3 +170,22 @@ var registroEntrega = new Vue({
     ],
   },
 });
+
+var registroVacunaInfluenza = new Vue({
+  el: '#data-reg-vac-influ',
+  data: {
+    title: 'SSNL -VacInflu',
+    platforms: {
+      android: true,
+      ios: false,
+    },
+    appType: 'Aplicación nativa',
+    summary: 'Aplicación realizada para agilizar el Drive Thru de vacunación contra la influenza' +
+    'los doctores escanearán el QR de los usuarios registrados y la app actualiza valores en los servidores.',
+    carouselDroid:[
+      { img: 'android-ssnl-vacinflu-1.png' },
+      { img: 'android-ssnl-vacinflu-2.png' },
+      { img: 'android-ssnl-vacinflu-3.png' },
+    ],
+  },
+});

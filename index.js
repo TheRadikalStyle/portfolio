@@ -10,6 +10,7 @@ var androidProjects = new Vue({
       { name: 'Encuentro estatal de investigación', id: '5', url: 'window.location.href="apps/index-eei.html"', thumb: 'android-EEI.png' },
       { name: 'Alerta COVID19', id: '6', url: 'window.location.href="apps/index-alertacovid19.html"', thumb: 'android-alertacovid19.png' },
       { name: 'Registro de entrega', id: '7', url: 'window.location.href="apps/index-registrodeentrega.html"', thumb: 'android-registrodeentrega.png' },
+      { name: 'Registro Vacunación Influenza', id: '8', url: 'window.location.href="apps/index-ssnlvacinflu.html"', thumb: 'android-reg-vacinflu.png' },
     ],
   },
 });
