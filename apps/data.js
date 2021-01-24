@@ -40,6 +40,10 @@ var dashrx = new Vue({
       android: true,
       ios: false,
     },
+    downloadStore: {
+      playstore: '',
+      appstore: '',
+    },
     appType: 'Aplicación nativa',
     summary: 'DashrX brinda un HUD simple pero util diseñado para ayudar a visualizar la velocidad de tu vehiculo especialmente en un entorno nocturno sin perder de vista el camino.',
     carouselDroid:[
