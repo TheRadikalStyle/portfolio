@@ -21,7 +21,7 @@ var registroVacInfluenza = new Vue({
     title: 'Sistema de registro para vacunación contra la influenza',
     summary: 'Sistema para la Secretaría de Salud de Nuevo León para llevar un' +
               'registro de las personas a vacunar y tener fluidez en su aplicación' +
-              'en el modulo drive thru. Se acompaña de una app para el personal médico.',
+              'en el modulo drive thru. Se acompaña de una app para el personal médico. http://saludnl.gob.mx/vacunacion/influenza',
     appType: 'Web',
     tech:[
       { tecno: 'HTML' },
