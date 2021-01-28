@@ -28,18 +28,18 @@ var iOSProjects = new Vue({
   },
 });
 
-//Index - List of iOS projects
+//Index - List of web projects
 var webProjects = new Vue({
   el: '#web-projects',
   data: {
     webProjects: [
-      { name: 'Apoyos', id: '1', url: 'window.location.href="webs/index-.html"', thumb: 'web-apoyos.png' },
-      { name: 'Nóminas', id: '2', url: 'window.location.href="webs/index-.html"', thumb: 'web-nominas.png' },
-      { name: 'Gafetes', id: '3', url: 'window.location.href="webs/index-.html"', thumb: 'web-gafetes.png' },
-      { name: 'LDRP', id: '4', url: 'window.location.href="webs/index-.html"', thumb: 'web-ldrp.png' },
-      { name: 'Seguimiento de trámites', url:'window.location.href="webs/index-tramites.html"', thumb: 'web-tramites.png' },
-      { name: 'Asenco', id: '4', url: 'window.location.href="webs/index-.html"', thumb: 'web-asenco.png' },
-      { name: 'Registro Vacunación Influenza', url:'window.location.href="webs/index-registro-vac-influenza.html"', thumb: 'web-regvacinflu.png' }
+      { name: 'Apoyos', id: '1', url: 'window.location.href="webs/index-.html"', thumb: 'ssnl-general.png' },
+      { name: 'Nóminas', id: '2', url: 'window.location.href="webs/index-.html"', thumb: 'ssnl-general.png' },
+      { name: 'Gafetes', id: '3', url: 'window.location.href="webs/index-.html"', thumb: 'ssnl-general.png' },
+      { name: 'LDRP', id: '4', url: 'window.location.href="webs/index-.html"', thumb: 'ssnl-general.png' },
+      { name: 'Seguimiento de trámites', id: '5', url:'window.location.href="webs/index-tramites.html"', thumb: 'ssnl-general.png' },
+      { name: 'Asenco', id: '4', id: '6', url: 'window.location.href="webs/index-.html"', thumb: 'web-asenco.png' },
+      { name: 'Registro Vacunación Influenza', id: '7', url:'window.location.href="webs/index-registro-vac-influenza.html"', thumb: 'ssnl-general.png' }
     ],
   },
 });
