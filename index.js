@@ -38,7 +38,7 @@ var webProjects = new Vue({
       { name: 'Gafetes', id: '3', url: 'window.location.href="webs/index-.html"', thumb: 'ssnl-general.png' },
       { name: 'LDRP', id: '4', url: 'window.location.href="webs/index-.html"', thumb: 'ssnl-general.png' },
       { name: 'Seguimiento de trámites', id: '5', url:'window.location.href="webs/index-tramites.html"', thumb: 'ssnl-general.png' },
-      { name: 'Asenco', id: '4', id: '6', url: 'window.location.href="webs/index-.html"', thumb: 'web-asenco.png' },
+      { name: 'Asenco', id: '4', id: '6', url: 'window.location.href="webs/index-asenco.html"', thumb: 'web-asenco.png' },
       { name: 'Registro Vacunación Influenza', id: '7', url:'window.location.href="webs/index-registro-vac-influenza.html"', thumb: 'ssnl-general.png' }
     ],
   },

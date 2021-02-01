@@ -1,7 +1,7 @@
 var tramites = new Vue({
   el: '#data-tramites',
   data: {
-    title: 'Sistema de trámites',
+    title: 'Atención y Seguimiento de Trámites',
     summary: 'Sistema para la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León',
     appType: 'Web',
     tech:[
@@ -10,10 +10,29 @@ var tramites = new Vue({
       { tecno: 'Yii2 framework' }
     ],
     carousel:[
-      { img: 'alertacovid19-android-1.png' }
+      { img: 'web-tramites-1.png' },
+      { img: 'web-tramites-2.png' },
+      { img: 'web-tramites-3.png' },
+      { img: 'web-tramites-4.png' }
     ],
   },
 });
+
+var asenco = new Vue({
+  el: '#data-asenco',
+  data: {
+    title: 'ASENCO Integram S.A. de C.V.',
+    summary: 'Página web para la consultora ASENCO Integram S.A. de C.V.  http://www.asenco.mx',
+    appType: 'Web',
+    tech:[
+      { tecno: 'Wordpress' }
+    ],
+    carousel:[
+      { img: 'web-asenco-1.png' }
+    ],
+  },
+});
+
 
 var registroVacInfluenza = new Vue({
   el: '#data-registro-vacuna-influenza',
