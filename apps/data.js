@@ -9,17 +9,18 @@ var alertacovid19 = new Vue({
       ios: true,
     },
     appType: 'Aplicación nativa',
-    summary: 'Alerta COVID-19 nace al intentar ayudar a la Secretaría de Salud de' +
-    'Nuevo León a tener una app que ofrezca mejor interacción al usuario' +
-    'para que use el chat que se implementó, al igual que ayudar mejorar' +
-    'las estadisticas de uso dando un mejor acceso a la información de' +
+    summary: 'Alerta COVID-19 nace al intentar ayudar a la Secretaría de Salud de ' +
+    'Nuevo León a tener una app que ofrezca mejor interacción al usuario ' +
+    'para que use el chat que se implementó, al igual que mejorar ' +
+    'las estadisticas de uso dando un mejor acceso a la información de ' +
     'casos a través de una interfáz amigable.',
     carouselDroid:[
       { img: 'alertacovid19-android-1.png' },
       { img: 'alertacovid19-android-2.png' },
       { img: 'alertacovid19-android-3.png' },
       { img: 'alertacovid19-android-4.png' },
-      { img: 'alertacovid19-android-5.png' }
+      { img: 'alertacovid19-android-5.png' },
+      { img: 'alertacovid19-android-6.png' }
     ],
     carouselIos:[
       { img: 'alertacovid19-ios-1.PNG' },
