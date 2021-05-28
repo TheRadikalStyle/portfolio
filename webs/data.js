@@ -59,3 +59,22 @@ var registroVacInfluenza = new Vue({
     ],
   },
 });
+
+
+var redCancer = new Vue({
+  el: '#data-red-cancer',
+  data: {
+    title: 'Sistema RED Cancer',
+    summary: 'Sistema para captura de los casos de cancer en el estado de Nuevo León',
+    appType: 'Web',
+    tech:[
+      { tecno: 'PHP' },
+      { tecno: 'Yii2' },
+      { tecno: 'Bootstrap' },
+      { tecno: 'JavaScript' },
+    ],
+    carousel:[
+      { img: 'red-cancer-1.png' }
+    ],
+  },
+});
