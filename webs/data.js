@@ -125,3 +125,31 @@ var ldrp = new Vue({
         ],
     },
 });
+
+var registroVacInfluenza = new Vue({
+    el: '#data-registro-vacuna-covid19-persalud',
+    data: {
+        title: 'Registro para vacunación contra la COVID-19 para el personal de Salud de Nuevo León',
+        summary: 'Sistema para la Secretaría de Salud de Nuevo León para llevar un' +
+            'registro del personal de salud que falta por vacunar para solicitar el apoyo de dosis ' +
+            'a la federación',
+        link: 'http://saludnl.gob.mx/vacunacion/covid19/personaldesalud',
+        appType: 'Web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'PHP' },
+            { tecno: 'MySQL' },
+            { tecno: 'Yii2 Framework' },
+            { tecno: 'Sweet Alert 2' }
+        ],
+        carousel: [
+            { img: 'reg_vac_covid19_persalud_1.png' },
+            { img: 'reg_vac_covid19_persalud_2.png' },
+            { img: 'reg_vac_covid19_persalud_3.png' },
+            { img: 'reg_vac_covid19_persalud_4.png' },
+            { img: 'reg_vac_covid19_persalud_5.png' },
+            { img: 'reg_vac_covid19_persalud_6.png' },
+            { img: 'reg_vac_covid19_persalud_7.png' },
+        ],
+    },
+});
