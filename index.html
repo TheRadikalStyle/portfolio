@@ -1,225 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
+
 <head>
-  <meta charset="utf-8">
-  <title>David's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta name="author" content="David Ochoa" />
+    <meta charset="utf-8">
+    <title>David Ochoa | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="David Ochoa" />
 
-  <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet" />
-  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
-  <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-  <link href="css/jcarousel.css" rel="stylesheet" />
-  <link href="css/flexslider.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- Theme skin -->
-  <link href="skins/green.css" rel="stylesheet" />
-  <!-- Fav and touch icons -->
-  <link rel="shortcut icon" href="ico/favicon.png" />
-  <!-- Material Design Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
-  <!-- VueJS -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-  <!-- Custom CSS -->
-  <link href="css/custom.css" rel="stylesheet" />
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/briefcase.png" />
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/bootstrap/5.1.1/css/bootstrap.min.css" />
+    <!-- Portfolio CSS -->
+    <link rel="stylesheet" href="dist/portfolio.css" />
+    <!-- SlickSlider -->
+    <link rel="stylesheet" type="text/css" href="dist/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="dist/slick/slick-theme.css" />
 
-  <!-- =======================================================
-  Theme Name: Flattern
-  Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
-<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <div id="header"></div>
 
-  <div id="wrapper">
-    <!-- start header -->
-    <header>
-      <div class="container ">
-        <div class="row nomargin">
-          <div class="span12">
-            <div class="headnav"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="span4">
-            <div class="logo">
-              <a href="index.html" class="mdi mdi-briefcase"></a>
-              <h1>Portafolio de David Ochoa</h1>
-            </div>
-          </div>
-          <div class="span8">
-            <div class="navbar navbar-static-top">
-              <!-- end navigation -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- end header -->
+    <div id="content" class="main"></div>
 
-    <!-- Android Projects -->
-    <div class="row">
-      <div class="span12">
-        <h4 class="heading">Proyectos <strong>Android </strong><span class="mdi mdi-android"></span></h4>
-        <div class="row">
-          <section id="android-projects"> <!-- id=projects -->
-            <ul id="thumbs" class="portfolio">
+    <div id="footer"></div>
 
-              <!-- TEMPLATE FOR VUE -->
-              <li v-for="project in androidProjects" class="item-thumbs span2 design">
-                <a class="hover-wrap" v-bind:onclick="project.url" >
-                  <span class="overlay-img"></span>
-                  <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-                </a>
-                <div>
-                  <img v-bind:src="'img/works/thumbs/' + project.thumb" />
-                </div>
-                <div class="project-title"><p>{{ project.name }}</p></div>
-              </li>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/jquery/jquery-3.6.0.min.js"></script>
+    <script src="dist/bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/portfolio.js"></script>
+    <script type="text/javascript" src="dist/slick/slick.min.js"></script>
 
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-    <!-- End Android Projects -->
-
-
-    <!-- Start iOS projects -->
-    <div class="row">
-      <div class="span12">
-        <h4 class="heading">Proyectos <strong>iOS </strong><span class="mdi mdi-apple"></span></h4>
-        <div class="row">
-          <section id="iOS-projects">
-            <ul id="thumbs" class="portfolio">
-
-              <!-- TEMPLATE FOR VUE -->
-              <li v-for="project in iOSProjects" class="item-thumbs span2 design">
-                <a class="hover-wrap" v-bind:onclick="project.url" >
-                  <span class="overlay-img"></span>
-                  <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-                </a>
-                <div>
-                  <img v-bind:src="'img/works/thumbs/' + project.thumb" />
-                </div>
-                <div class="project-title"><p>{{ project.name }}</p></div>
-              </li>
-
-
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-    <!--End iOS Projects -->
-
-    <!-- Start web projects -->
-    <div class="row">
-      <div class="span12">
-        <h4 class="heading">Proyectos <strong>Web </strong><span class="mdi mdi-web"></span></h4>
-        <div class="row">
-          <section id="web-projects">
-            <ul id="thumbs" class="portfolio">
-
-              <!-- TEMPLATE FOR VUE -->
-              <li v-for="project in webProjects" class="item-thumbs span2 design">
-                <a class="hover-wrap" v-bind:onclick="project.url" >
-                  <span class="overlay-img"></span>
-                  <span class="overlay-img-thumb mdi mdi-plus-circle"></span>
-                </a>
-                <div>
-                  <img v-bind:src="'img/works/thumbs/' + project.thumb" />
-                </div>
-                <div class="project-title"><p>{{ project.name }}</p></div>
-              </li>
-
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-    <!--End web Projects -->
-
-  </div>
-  <footer>
-    <div class="container">
-      <div class="row"></div>
-    </div>
-    <div id="sub-footer">
-      <div class="container">
-        <div class="row">
-          <div class="span6">
-            <div class="copyright">
-              <p>
-                <span>2021 - David Ochoa</span>
-              </p>
-              <div class="credits">
-                <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
-              -->
-              Flattern template - Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
-        <div class="span6">
-          <ul class="social-network">
-            <li><a href="https://www.linkedin.com/in/theradikalstyle" data-placement="bottom" title="Linkedin"><i class="mdi mdi-linkedin-box footer-social"></i></a></li>
-            <li><a href="https://github.com/TheRadikalStyle" data-placement="bottom" title="GitHub"><i class="mdi mdi-github-circle footer-social"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-</div>
-<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
-<!-- javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jcarousel/jquery.jcarousel.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>
-<script src="js/google-code-prettify/prettify.js"></script>
-<script src="js/portfolio/jquery.quicksand.js"></script>
-<script src="js/portfolio/setting.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/jquery.nivo.slider.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.ba-cond.min.js"></script>
-<script src="js/jquery.slitslider.js"></script>
-<script src="js/animate.js"></script>
-<!-- Template Custom JavaScript File -->
-<script src="js/custom.js"></script>
-<!-- Vue Scripts -->
-<script src="index.js"></script>
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyA2O70S5_PKRVYnkqzsLsUvvl9w-swFlZ8",
-    authDomain: "portfolio-github-e7788.firebaseapp.com",
-    projectId: "portfolio-github-e7788",
-    storageBucket: "portfolio-github-e7788.appspot.com",
-    messagingSenderId: "1047674600424",
-    appId: "1:1047674600424:web:5cee2141777008a9f2825d",
-    measurementId: "G-0LWD16WE49"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+    <!-- Page elements -->
+    <script>
+        $("#header").load("base/navbar.html");
+        $("#footer").load("base/footer.html");
+        $(document).ready(function () {
+            renderPage("main-content.html");
+        });
+    </script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA2O70S5_PKRVYnkqzsLsUvvl9w-swFlZ8",
+            authDomain: "portfolio-github-e7788.firebaseapp.com",
+            projectId: "portfolio-github-e7788",
+            storageBucket: "portfolio-github-e7788.appspot.com",
+            messagingSenderId: "1047674600424",
+            appId: "1:1047674600424:web:5cee2141777008a9f2825d",
+            measurementId: "G-0LWD16WE49"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </body>
+
 </html>

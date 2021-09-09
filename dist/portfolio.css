@@ -1,0 +1,111 @@
+/* Main content */
+
+.main{
+    width: 100%;
+    height: 100%;
+
+    margin: 16px;
+    padding: 16px;
+}
+
+/* Project type title */
+.project-title{
+    font-size: 1.5rem;
+}
+.project-title .mdi{
+    font-size: 1.6em;
+}
+
+/* Cards */
+
+.card{
+    margin: 8px;
+    border-radius: 16px;
+    padding: 8px;
+    border-color: #558b2f; /* Material Light Green 800 */
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text > .btn{
+    color: #558b2f;
+    border-color: #558b2f;
+}
+
+.card-text > .btn:hover{
+    color: white;
+    background-color: #558b2f;
+}
+
+.card-availability{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #F5F5F5; /* Material Gray 100 */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    margin-bottom: 20px;
+}
+
+.card-availability-text{
+    display: flex;
+    padding: 2px;
+}
+
+.card-availability-text > .mdi{
+    font-size: 14pt;
+    margin-right: 8px;
+}
+
+.card-availability-text > .store-button{
+    position: absolute;
+    font-size: 14pt;
+    right: 8px;
+}
+
+.card-tech{
+    padding: 0px;
+    margin: 0px;
+}
+
+  /* Projects pages */
+.apps-title{
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+#section-summary{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#section-summary > .row > .summary{
+    text-justify: distribute;
+}
+
+#section-images{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.screenshots-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}

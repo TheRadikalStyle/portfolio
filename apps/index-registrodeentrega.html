@@ -1,150 +1,61 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>David's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+<!-- CONTENT -->
 
-  <!-- css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="../css/bootstrap.css" rel="stylesheet" />
-  <link href="../css/bootstrap-responsive.css" rel="stylesheet" />
-  <link href="../css/style.css" rel="stylesheet" />
-  <link href="../css/custom.css" rel="stylesheet" />
-  <!-- Theme skin -->
-  <link href="../skins/green.css" rel="stylesheet" />
-  <!-- Fav and touch icons -->
-  <link rel="shortcut icon" href="../ico/favicon.png" />
-  <!-- Material Design Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
-  <link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
-  <!-- VueJS -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-</head>
-<body>
-  <div id="wrapper">
-    <!-- start header -->
-    <header>
-      <div class="container ">
-        <div class="row nomargin">
-          <div class="span12">
-            <div class="headnav"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="span4">
-            <div class="logo">
-              <a href="../index.html" class="mdi mdi-briefcase"></a>
-              <h1>Portafolio de David Ochoa</h1>
-            </div>
-          </div>
-          <div class="span8">
-            <div class="navbar navbar-static-top">
-              <!-- end navigation -->
-            </div>
-          </div>
-        </div>
+<div id="data-registrodeentrega" class="container">
+
+  <section id="section-title">
+    <div class="row">
+      <div class="apps-title">
+        <h3>Registro de entrega</h3>
       </div>
-    </header>
-    <!-- end header -->
-
-    <!-- CONTENT -->
-
-
-    <div id="data-registrodeentrega" class="container">
-
-      <section id="section-title">
-        <div class="row">
-          <div class="apps-title"><h3>Registro de entrega</h3></div>
-        </div>
-        <div>
-          <div class="card-availability">
-            <div><p>Plataforma</p></div>
-            <div class="card-availability-text"><a class="mdi mdi-android"></a><p> Android</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-summary">
-        <div class="row">
-          <div class="summary">
-            <p>{{ appType }}</p>
-            <p>{{ summary }}</p>
-          </div>
-        </div>
-      </section>
-
-    <section id="section-images">
-      <div class="container">
-        <p class="screenshots-title">Screenshots Android</p>
-        <div class="row">
-            <div class="slick-carousel">
-              <img v-for="imagen in carouselDroid" v-bind:src="'../img/works/full/registrodeentrega/' + imagen.img" />
-            </div>
-        </div>
-      </div>
-    </section>
     </div>
+    <div>
+      <div class="card-availability">
+        <div>
+          <p>Plataforma</p>
+        </div>
+        <div class="card-availability-text"><a class="mdi mdi-android"></a>
+          <p> Android</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="section-summary">
+    <div class="row">
+      <div class="summary">
+        <p>{{ appType }}</p>
+        <p>{{ summary }}</p>
+      </div>
+    </div>
+  </section>
 
-
-
-
+  <section id="section-images">
+    <div class="container">
+      <p class="screenshots-title">Screenshots Android</p>
+      <div class="row">
+        <div class="slick-carousel">
+          <img v-for="imagen in carouselDroid" v-bind:src="'../img/works/full/registrodeentrega/' + imagen.img" />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 <!-- END CONTENT -->
 
 
+<!-- Vue Script -->
+<script src="apps/data.js"></script>
 
-    <footer>
-      <div class="container">
-        <div class="row"></div>
-      </div>
-      <div id="sub-footer">
-        <div class="container">
-          <div class="row">
-            <div class="span6">
-              <div class="copyright">
-                <p>
-                  <span>2020 - David Ochoa</span>
-                </p>
-                <div class="credits">
-                Flattern template - Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
-            </div>
-          </div>
-          <div class="span6">
-            <ul class="social-network">
-              <li><a href="https://www.linkedin.com/in/theradikalstyle" data-placement="bottom" title="Linkedin"><i class="mdi mdi-linkedin-box footer-social"></i></a></li>
-              <li><a href="https://github.com/TheRadikalStyle" data-placement="bottom" title="GitHub"><i class="mdi mdi-github-circle footer-social"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/slick/slick.min.js"></script>
-<!-- Vue Scripts -->
-<script src="data.js"></script>
-
+<!-- Slick config -->
 <script type="text/javascript">
- $(document).ready(function(){
+  $(document).ready(function () {
 
-   $('.slick-carousel').slick({
-     autoplay:true,
-     arrows:true,
-     dots:true
-   });
+    $('.slick-carousel').slick({
+      autoplay: true,
+      arrows: true,
+      dots: true
+    });
 
- });
+  });
 </script>
-
-</body>
-</html>
