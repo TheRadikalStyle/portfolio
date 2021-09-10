@@ -6,7 +6,6 @@ $(function(){
         console.log(this);
         return false; //Disable reload
     });
-
 });
 
 function renderPage(pageToRender){

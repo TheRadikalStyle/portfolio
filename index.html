@@ -45,6 +45,21 @@
         $("#footer").load("base/footer.html");
         $(document).ready(function () {
             renderPage("main-content.html");
+
+            $(document).on("click", ".project-title", function(){
+                switch(this.id){
+                    case "title-android-projects": 
+                        $("#android-projects").toggle();
+                    break;
+                    case "title-ios-projects": 
+                        $("#iOS-projects").toggle();
+                    break;
+                    case "title-web-projects": 
+                        $("#web-projects").toggle();
+                    break;
+                }
+            });
+
         });
     </script>
     <script>

@@ -6,12 +6,34 @@
     padding: 16px;
 }
 
+.navbar-brand{
+    cursor: pointer;
+}
+
 /* Project type title */
 .project-title{
     font-size: 1.5rem;
 }
 .project-title .mdi{
     font-size: 1.6em;
+}
+
+#title-android-projects,
+#title-ios-projects,
+#title-web-projects{
+    cursor: pointer;
+}
+
+.mdi-android{
+    color: #a4c639;
+}
+
+.mdi-apple{
+    color: #a2aaad;
+}
+
+.mdi-web{
+    color: #2196f3; /* Material Blue 500 */
 }
 
 /* Cards */
@@ -107,4 +129,44 @@
 .screenshots-title{
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .card-body{
+        display: inline-flex;
+    }
+
+    /*.card > .card-body > .row{
+        width: 100%;
+        background-color: red;
+    }*/
+
+    #row-card-img{
+        display: none;
+    }
+
+    #row-card-title{
+        width: 70%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #row-card-button{
+        width: 30%;
+        margin: auto;
+    }
+
+    .project-title{
+        text-align: center;
+    }
+
+    /*.card-title{
+        width: 100%;
+        background-color: royalblue;
+    }
+
+    .card-text > .btn{
+        background-color: white;
+    }*/
 }
