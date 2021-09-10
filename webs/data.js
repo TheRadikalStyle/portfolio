@@ -153,3 +153,30 @@ var registroVacInfluenza = new Vue({
         ],
     },
 });
+
+var unraitteAdminConsole = new Vue({
+    el: '#data-unraitte-adminconsole',
+    data: {
+        title: 'Unraitte | Consola administrativa',
+        summary: 'FrontEnd amigable que ayuda al personal de Unraitte con las altas / bajas de conductores / vehiculos y ' +
+                'sus respectivos documentos, todo esto posible conectandose a la API del Instituto de Movilidad y Accesibilidad de Nuevo León',
+        appType: 'Web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'PHP' },
+            { tecno: 'MySQL' },
+            { tecno: 'Yii2 Framework' },
+            { tecno: 'Sweet Alert 2' }
+        ],
+        carousel: [
+            { img: 'unraitte-console-1.png' },
+            { img: 'unraitte-console-2.png' },
+            { img: 'unraitte-console-3.png' },
+            { img: 'unraitte-console-4.png' },
+            { img: 'unraitte-console-5.png' },
+            { img: 'unraitte-console-6.png' },
+            { img: 'unraitte-console-7.png' },
+            { img: 'unraitte-console-8.png' },
+        ],
+    },
+});
