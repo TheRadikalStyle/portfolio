@@ -35,7 +35,7 @@ var webProjects = new Vue({
         webProjects: [
             { name: 'Apoyos', id: '1', url: 'renderPage("webs/index-apoyos.html")', thumb: 'ssnl-general.png' },
             { name: 'Nóminas', id: '2', url: 'renderPage("webs/index-.html")', thumb: 'ssnl-general.png' },
-            { name: 'Gafetes', id: '3', url: 'renderPage("webs/index-.html")', thumb: 'ssnl-general.png' },
+            { name: 'Gafetes', id: '3', url: 'renderPage("webs/index-gafetes.html")', thumb: 'ssnl-general.png' },
             { name: 'LDRP', id: '4', url: 'renderPage("webs/index-ldrp.html")', thumb: 'ssnl-general.png' },
             { name: 'Seguimiento de trámites', id: '5', url: 'renderPage("webs/index-tramites.html")', thumb: 'ssnl-general.png' },
             { name: 'Asenco', id: '4', id: '6', url: 'renderPage("webs/index-asenco.html")', thumb: 'web-asenco.png' },

@@ -180,3 +180,28 @@ var unraitteAdminConsole = new Vue({
         ],
     },
 });
+
+var gafetes = new Vue({
+    el: '#data-gafetes',
+    data: {
+        title: 'Gafetes',
+        summary: 'Sistema de captura de personal del ' + 
+                'departamento de Regulación Sanitaria para administrar a su personal y crear los gafetes respectivos para los operativos administrativos y los operativos de campo',
+        appType: 'Web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'PHP' },
+            { tecno: 'MySQL' },
+            { tecno: 'Yii2 Framework' }
+        ],
+        carousel: [
+            { img: 'gafetes-1.png' },
+            { img: 'gafetes-2.png' },
+            { img: 'gafetes-3.png' },
+            { img: 'gafetes-4.png' },
+            { img: 'gafetes-5.png' },
+            { img: 'gafetes-6.png' },
+            { img: 'gafetes-7.png' },
+        ],
+    },
+});
