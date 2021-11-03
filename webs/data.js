@@ -1,10 +1,23 @@
+/**
+ * Webs Settings
+ * 
+ * appTypeIcon: 'mdi-web', 'mdi-android', 'mdi-apple-ios' 
+ * 
+ * 
+ * 
+*/
+
+
 var tramites = new Vue({
     el: '#data-tramites',
     data: {
         title: 'Atención y Seguimiento de Trámites',
-        summary: 'Sistema para la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León, donde se ingresan los trámites correspondientes al area para control y asignación, también se proporciona una forma en la que la persona involucrada puede darle seguimiento a su trámite.',
+        summary: 'Sistema para la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León, donde se ingresan los ' +
+        'trámites correspondientes al area para control y asignación, también se proporciona una forma en la que la persona involucrada puede darle ' + 
+        'seguimiento a su trámite.',
         link: 'http://saludnl.gob.mx/regulacion-sanitaria/tramites',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'HTML' },
             { tecno: 'PHP' },
@@ -28,6 +41,7 @@ var asenco = new Vue({
         summary: 'Página web para la consultora ASENCO Integram S.A. de C.V.',
         link: ' http://www.asenco.mx',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'Wordpress' }
         ],
@@ -49,6 +63,7 @@ var registroVacInfluenza = new Vue({
             'en el modulo drive thru. Se acompaña de una app para el personal médico.',
         link: 'http://saludnl.gob.mx/vacunacion/influenza',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'HTML' },
             { tecno: 'PHP' },
@@ -72,8 +87,9 @@ var redCancer = new Vue({
     el: '#data-red-cancer',
     data: {
         title: 'Sistema RED Cancer',
-        summary: 'Sistema para captura de los casos de cancer en el estado de Nuevo León',
+        summary: 'Sistema para captura de los casos de cancer en el estado de Nuevo León.',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'PHP' },
             { tecno: 'Yii2' },
@@ -90,8 +106,9 @@ var apoyos = new Vue({
     el: '#data-apoyos',
     data: {
         title: 'Apoyos',
-        summary: 'Sistema para captura de los apoyos otorgados por el departamento de Gestoría y Atención Ciudadana de la Secretaría de Salud de Nuevo León',
+        summary: 'Sistema para captura de los apoyos otorgados por el departamento de Gestoría y Atención Ciudadana de la Secretaría de Salud de Nuevo León.',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'PHP' },
             { tecno: 'Yii2' },
@@ -110,8 +127,10 @@ var ldrp = new Vue({
     el: '#data-ldrp',
     data: {
         title: 'Sistema LDRP',
-        summary: 'Sistema para captura de licencias sanitarias, reconocimientos y permisos sanitarios, así como el distintivo salud que otroga la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León.',
+        summary: 'Sistema para captura de licencias sanitarias, reconocimientos y permisos sanitarios, así como ' + 
+        'el distintivo salud que otroga la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León.',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'PHP' },
             { tecno: 'Yii2' },
@@ -132,9 +151,10 @@ var registroVacInfluenza = new Vue({
         title: 'Registro para vacunación contra la COVID-19 para el personal de Salud de Nuevo León',
         summary: 'Sistema para la Secretaría de Salud de Nuevo León para llevar un' +
             'registro del personal de salud que falta por vacunar para solicitar el apoyo de dosis ' +
-            'a la federación',
+            'a la federación.',
         link: 'http://saludnl.gob.mx/vacunacion/covid19/personaldesalud',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'HTML' },
             { tecno: 'PHP' },
@@ -158,9 +178,11 @@ var unraitteAdminConsole = new Vue({
     el: '#data-unraitte-adminconsole',
     data: {
         title: 'Unraitte | Consola administrativa',
-        summary: 'FrontEnd amigable que ayuda al personal de Unraitte con las altas / bajas de conductores / vehiculos y ' +
-                'sus respectivos documentos, todo esto posible conectandose a la API del Instituto de Movilidad y Accesibilidad de Nuevo León',
+        summary: 'FrontEnd amigable que ayuda al personal de la empresa Unraitte con las altas / bajas de conductores / vehiculos y ' +
+                'sus respectivos documentos, al conectarse a la API del Instituto de Movilidad y Accesibilidad de Nuevo León.',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'HTML' },
             { tecno: 'PHP' },
@@ -185,9 +207,10 @@ var gafetes = new Vue({
     el: '#data-gafetes',
     data: {
         title: 'Gafetes',
-        summary: 'Sistema de captura de personal del ' + 
-                'departamento de Regulación Sanitaria para administrar a su personal y crear los gafetes respectivos para los operativos administrativos y los operativos de campo',
+        summary: 'Sistema de captura de personal del departamento de Regulación Sanitaria para administrar ' + 
+                'a su personal y crear los gafetes respectivos para los operativos administrativos y los operativos de campo.',
         appType: 'Web',
+        appTypeIcon: 'mdi-web',
         tech: [
             { tecno: 'HTML' },
             { tecno: 'PHP' },

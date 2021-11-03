@@ -28,7 +28,7 @@
   <section id="section-summary">
     <div class="row">
       <div class="summary">
-        <p>{{ appType }}</p>
+        <p><span v-bind:class="'mdi ' + appTypeIcon"></span> {{ appType }}</p>
         <p>{{ summary }}</p>
       </div>
     </div>

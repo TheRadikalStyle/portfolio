@@ -11,7 +11,7 @@
         <p>Técnología involucrada</p>
         <div class="row">
           <div v-for="tec in tech">
-            <p class="card-tech"><span class="mdi mdi-web"></span> {{ tec.tecno }}</p>
+            <p class="card-tech"><span class="mdi mdi-circle-small"></span> {{ tec.tecno }}</p>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
   <section id="section-summary">
     <div class="row">
       <div class="summary">
-        <p>{{ appType }}</p>
+        <p><span v-bind:class="'mdi ' + appTypeIcon"></span> {{ appType }}</p>
         <p>{{ summary }}</p>
       </div>
     </div>

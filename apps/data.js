@@ -1,4 +1,11 @@
-//Datos de aplicaciones
+/**
+ * Apps Settings
+ * 
+ * appTypeIcon: 'mdi-web', 'mdi-android', 'mdi-apple-ios', 'mdi-cellphone' 
+ * 
+ * 
+ * 
+*/
 
 var alertacovid19 = new Vue({
   el: '#data-alertacovid19',
@@ -9,6 +16,7 @@ var alertacovid19 = new Vue({
       ios: true,
     },
     appType: 'Aplicación nativa',
+    appTypeIcon: 'mdi-cellphone',
     summary: 'Alerta COVID-19 nace al intentar ayudar a la Secretaría de Salud de ' +
     'Nuevo León a tener una app que ofrezca mejor interacción al usuario ' +
     'para que use el chat que se implementó, al igual que mejorar ' +
@@ -46,6 +54,7 @@ var dashrx = new Vue({
       appstore: '',
     },
     appType: 'Aplicación nativa',
+    appTypeIcon: 'mdi-cellphone',
     summary: 'DashrX brinda un HUD simple pero util diseñado para ayudar a visualizar la velocidad de tu vehiculo especialmente en un entorno nocturno sin perder de vista el camino.',
     carouselDroid:[
       { img: 'android-dashrx-1.webp' },
@@ -66,6 +75,7 @@ var encuestaEstatal = new Vue({
       ios: false,
     },
     appType: 'Aplicación nativa',
+    appTypeIcon: 'mdi-cellphone',
     summary: 'Aplicación que se usa para registrar a los asistentes a los eventos de investigación por parte del departamento de Enseñanza e Investigación de la Secretaría de Salud.',
     carouselDroid:[
       { img: 'android-EEI-1.png' },
@@ -86,6 +96,7 @@ var codigoICTUS = new Vue({
       ios: false,
     },
     appType: 'Aplicación nativa',
+    appTypeIcon: 'mdi-cellphone',
     summary: 'Aplicación de ayuda a la población para detectar sintomas de una embolia cerebral (ICTUS).',
     carouselDroid:[
       { img: '' },
@@ -105,11 +116,12 @@ var checaTuPeso = new Vue({
       ios: true,
     },
     appType: 'Aplicación nativa',
+    appTypeIcon: 'mdi-cellphone',
     summary: 'Aplicación para concientizar a la población sobre los peligros del sobrepeso y la obesidad por medio de tips e invitando a estar activo incorporando un contador de pasos.',
     carouselDroid:[
       { img: 'android-imc-1.png' },
-      { img: 'android-imc-1.png' },
-      { img: 'android-imc-1.png' }
+      { img: 'android-imc-2.png' },
+      { img: 'android-imc-3.png' }
     ],
     carouselIos:[
       { img: 'ios-imc-1.png' },
@@ -127,6 +139,7 @@ var lactanciaEducativa = new Vue({
       ios: true,
     },
     appType: 'Aplicación nativa',
+    appTypeIcon: 'mdi-cellphone',
     summary: 'Proyecto realizado con fines de información e investigación sobre la lactancia' +
     'materna y su importancia, a traves de diapositivas convertidas en una experiencia similar' +
     'a cursos.' +
@@ -160,7 +173,8 @@ var registroEntrega = new Vue({
       ios: false,
     },
     appType: 'Aplicación nativa',
-    summary: 'Aplicación nativa Aplicación realizada para apoyar al equipo de colaboradores que registran ' +
+    appTypeIcon: 'mdi-cellphone',
+    summary: 'Aplicación realizada para apoyar al equipo de colaboradores que registran ' +
     'a las personas que reciben una tarjeta de bonificación entregada por el gobierno de Nuevo León para apoyar en la contingencia COVID-19.',
     carouselDroid:[
       { img: 'android-registrodeentrega_1.png' },
@@ -181,6 +195,7 @@ var registroVacunaInfluenza = new Vue({
       ios: false,
     },
     appType: 'Aplicación nativa',
+    appTypeIcon: 'mdi-cellphone',
     summary: 'Aplicación realizada para agilizar el Drive Thru de vacunación contra la influenza' +
     'los doctores escanearán el QR de los usuarios registrados y la app actualiza valores en los servidores.',
     carouselDroid:[
