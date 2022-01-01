@@ -1,0 +1,61 @@
+<!-- CONTENT -->
+
+<div id="data-cobertura-universal" class="container">
+
+    <section id="section-title">
+        <div class="apps-title">
+            <h3>{{ title }}</h3>
+        </div>
+        <div class="row">
+            <div class="card-availability">
+                <p>Técnología involucrada</p>
+                <div class="row">
+                    <div v-for="tec in tech">
+                        <p class="card-tech"><span class="mdi mdi-circle-small"></span> {{ tec.tecno }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-summary">
+        <div class="row">
+            <div class="summary">
+                <p><span v-bind:class="'mdi ' + appTypeIcon"></span> {{ appType }}</p>
+                <p>{{ summary }}</p>
+                <p>Enlace: <a v-bind:href="link" target="_blank">{{ link }}</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-images">
+        <div class="container">
+            <p class="screenshots-title">Screenshots</p>
+            <div class="row">
+                <div class="slick-carousel">
+                    <img v-for="imagen in carousel" v-bind:src="'img/works/full/web_cobertura/' + imagen.img" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- END CONTENT -->
+
+
+<!-- Vue Script -->
+<script src="webs/data.js"></script>
+
+<!-- Slick config -->
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.slick-carousel').slick({
+            autoplay: true,
+            arrows: true,
+            dots: true,
+            adaptiveHeight: true
+        });
+
+    });
+</script>
