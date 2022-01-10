@@ -42,7 +42,8 @@ var webProjects = new Vue({
             { name: 'Registro Vacunación Influenza', id: '7', url: 'renderPage("webs/index-registro-vac-influenza.html")', thumb: 'ssnl-general.png' },
             { name: 'RED Cancer', id: '8', url: 'renderPage("webs/index-red-cancer.html")', thumb: 'ssnl-general.png' },
             { name: 'Registro Vacunación Personal de Salud', id: '9', url: 'renderPage("webs/index-reg-covid19-persalud.html")', thumb: 'ssnl-general.png' },
-            { name: 'Unraitte | Consola administración', id: '10', url: 'renderPage("webs/index-unraitte-console.html")', thumb: 'web-unraitte.png' }
+            { name: 'Unraitte | Consola administración', id: '10', url: 'renderPage("webs/index-unraitte-console.html")', thumb: 'web-unraitte.png' },
+            { name: 'Cobertura Universal SSNL', id: '11', url: 'renderPage("webs/index-cobertura.html")', thumb: 'ssnl-general.png' }
         ],
     },
 });

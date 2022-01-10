@@ -5,7 +5,7 @@
  * 
  * 
  * 
-*/
+ */
 
 
 var tramites = new Vue({
@@ -13,8 +13,8 @@ var tramites = new Vue({
     data: {
         title: 'Atención y Seguimiento de Trámites',
         summary: 'Sistema para la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León, donde se ingresan los ' +
-        'trámites correspondientes al area para control y asignación, también se proporciona una forma en la que la persona involucrada puede darle ' + 
-        'seguimiento a su trámite.',
+            'trámites correspondientes al area para control y asignación, también se proporciona una forma en la que la persona involucrada puede darle ' +
+            'seguimiento a su trámite.',
         link: 'http://saludnl.gob.mx/regulacion-sanitaria/tramites',
         appType: 'Web',
         appTypeIcon: 'mdi-web',
@@ -127,8 +127,8 @@ var ldrp = new Vue({
     el: '#data-ldrp',
     data: {
         title: 'Sistema LDRP',
-        summary: 'Sistema para captura de licencias sanitarias, reconocimientos y permisos sanitarios, así como ' + 
-        'el distintivo salud que otroga la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León.',
+        summary: 'Sistema para captura de licencias sanitarias, reconocimientos y permisos sanitarios, así como ' +
+            'el distintivo salud que otroga la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León.',
         appType: 'Web',
         appTypeIcon: 'mdi-web',
         tech: [
@@ -179,7 +179,7 @@ var unraitteAdminConsole = new Vue({
     data: {
         title: 'Unraitte | Consola administrativa',
         summary: 'FrontEnd amigable que ayuda al personal de la empresa Unraitte con las altas / bajas de conductores / vehiculos y ' +
-                'sus respectivos documentos, al conectarse a la API del Instituto de Movilidad y Accesibilidad de Nuevo León.',
+            'sus respectivos documentos, al conectarse a la API del Instituto de Movilidad y Accesibilidad de Nuevo León.',
         appType: 'Web',
         appTypeIcon: 'mdi-web',
         appTypeIcon: 'mdi-web',
@@ -207,8 +207,8 @@ var gafetes = new Vue({
     el: '#data-gafetes',
     data: {
         title: 'Gafetes',
-        summary: 'Sistema de captura de personal del departamento de Regulación Sanitaria para administrar ' + 
-                'a su personal y crear los gafetes respectivos para los operativos administrativos y los operativos de campo.',
+        summary: 'Sistema de captura de personal del departamento de Regulación Sanitaria para administrar ' +
+            'a su personal y crear los gafetes respectivos para los operativos administrativos y los operativos de campo.',
         appType: 'Web',
         appTypeIcon: 'mdi-web',
         tech: [
@@ -225,6 +225,32 @@ var gafetes = new Vue({
             { img: 'gafetes-5.png' },
             { img: 'gafetes-6.png' },
             { img: 'gafetes-7.png' },
+        ],
+    },
+});
+
+var cobertura = new Vue({
+    el: '#data-cobertura-universal',
+    data: {
+        title: 'Cobertura universal para niñas, niños y adolescentes con cancer',
+        summary: `Landing page para promocionar la cobertura universal que ofrece el gobierno 
+         del estado de Nuevo León.`,
+        link: 'https://saludnl.gob.mx/cancerinfantil',
+        appType: 'Web',
+        appTypeIcon: 'mdi-web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'VueJS' },
+            { tecno: 'MySQL' },
+            { tecno: 'Sweet Alert 2' }
+        ],
+        carousel: [
+            { img: 'cobertura-1.png' },
+            { img: 'cobertura-2.png' },
+            { img: 'cobertura-3.png' },
+            { img: 'cobertura-4.png' },
+            { img: 'cobertura-5.png' },
+            { img: 'cobertura-6.png' },
         ],
     },
 });
