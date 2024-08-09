@@ -1,5 +1,6 @@
 /**
  * Webs Settings
+<<<<<<< HEAD
  *
  * appTypeIcon: 'mdi-web', 'mdi-android', 'mdi-apple-ios'
  *
@@ -28,6 +29,40 @@ var tramites = new Vue({
       { img: "web-tramites-6.png" },
     ],
   },
+=======
+ * 
+ * appTypeIcon: 'mdi-web', 'mdi-android', 'mdi-apple-ios' 
+ * 
+ * 
+ * 
+ */
+
+
+var tramites = new Vue({
+    el: '#data-tramites',
+    data: {
+        title: 'Atención y Seguimiento de Trámites',
+        summary: 'Sistema para la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León, donde se ingresan los ' +
+            'trámites correspondientes al area para control y asignación, también se proporciona una forma en la que la persona involucrada puede darle ' +
+            'seguimiento a su trámite.',
+        link: 'http://saludnl.gob.mx/regulacion-sanitaria/tramites',
+        appType: 'Web',
+        appTypeIcon: 'mdi-web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'PHP' },
+            { tecno: 'Yii2 framework' }
+        ],
+        carousel: [
+            { img: 'web-tramites-1.png' },
+            { img: 'web-tramites-2.png' },
+            { img: 'web-tramites-3.png' },
+            { img: 'web-tramites-4.png' },
+            { img: 'web-tramites-5.png' },
+            { img: 'web-tramites-6.png' },
+        ],
+    },
+>>>>>>> a41cbb7f4e2ffe96c95d150ffce60198515d3685
 });
 
 var asenco = new Vue({
@@ -117,6 +152,7 @@ var apoyos = new Vue({
 });
 
 var ldrp = new Vue({
+<<<<<<< HEAD
   el: "#data-ldrp",
   data: {
     title: "Sistema LDRP",
@@ -137,6 +173,27 @@ var ldrp = new Vue({
       { img: "web-ldrp-3.png" },
     ],
   },
+=======
+    el: '#data-ldrp',
+    data: {
+        title: 'Sistema LDRP',
+        summary: 'Sistema para captura de licencias sanitarias, reconocimientos y permisos sanitarios, así como ' +
+            'el distintivo salud que otroga la Subsecretaría de Regulación y Fomento Sanitario de la Secretaría de Salud de Nuevo León.',
+        appType: 'Web',
+        appTypeIcon: 'mdi-web',
+        tech: [
+            { tecno: 'PHP' },
+            { tecno: 'Yii2' },
+            { tecno: 'Bootstrap' },
+            { tecno: 'JavaScript' },
+        ],
+        carousel: [
+            { img: 'web-ldrp-1.png' },
+            { img: 'web-ldrp-2.png' },
+            { img: 'web-ldrp-3.png' },
+        ],
+    },
+>>>>>>> a41cbb7f4e2ffe96c95d150ffce60198515d3685
 });
 
 var registroVacInfluenza = new Vue({
@@ -171,6 +228,7 @@ var registroVacInfluenza = new Vue({
 });
 
 var unraitteAdminConsole = new Vue({
+<<<<<<< HEAD
   el: "#data-unraitte-adminconsole",
   data: {
     title: "Unraitte | Consola administrativa",
@@ -251,3 +309,84 @@ var coberturaUniversal = new Vue({
       ],
   },
 });
+=======
+    el: '#data-unraitte-adminconsole',
+    data: {
+        title: 'Unraitte | Consola administrativa',
+        summary: 'FrontEnd amigable que ayuda al personal de la empresa Unraitte con las altas / bajas de conductores / vehiculos y ' +
+            'sus respectivos documentos, al conectarse a la API del Instituto de Movilidad y Accesibilidad de Nuevo León.',
+        appType: 'Web',
+        appTypeIcon: 'mdi-web',
+        appTypeIcon: 'mdi-web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'PHP' },
+            { tecno: 'MySQL' },
+            { tecno: 'Yii2 Framework' },
+            { tecno: 'Sweet Alert 2' }
+        ],
+        carousel: [
+            { img: 'unraitte-console-1.png' },
+            { img: 'unraitte-console-2.png' },
+            { img: 'unraitte-console-3.png' },
+            { img: 'unraitte-console-4.png' },
+            { img: 'unraitte-console-5.png' },
+            { img: 'unraitte-console-6.png' },
+            { img: 'unraitte-console-7.png' },
+            { img: 'unraitte-console-8.png' },
+        ],
+    },
+});
+
+var gafetes = new Vue({
+    el: '#data-gafetes',
+    data: {
+        title: 'Gafetes',
+        summary: 'Sistema de captura de personal del departamento de Regulación Sanitaria para administrar ' +
+            'a su personal y crear los gafetes respectivos para los operativos administrativos y los operativos de campo.',
+        appType: 'Web',
+        appTypeIcon: 'mdi-web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'PHP' },
+            { tecno: 'MySQL' },
+            { tecno: 'Yii2 Framework' }
+        ],
+        carousel: [
+            { img: 'gafetes-1.png' },
+            { img: 'gafetes-2.png' },
+            { img: 'gafetes-3.png' },
+            { img: 'gafetes-4.png' },
+            { img: 'gafetes-5.png' },
+            { img: 'gafetes-6.png' },
+            { img: 'gafetes-7.png' },
+        ],
+    },
+});
+
+var cobertura = new Vue({
+    el: '#data-cobertura-universal',
+    data: {
+        title: 'Cobertura universal para niñas, niños y adolescentes con cancer',
+        summary: `Landing page para promocionar la cobertura universal que ofrece el gobierno 
+         del estado de Nuevo León.`,
+        link: 'https://saludnl.gob.mx/cancerinfantil',
+        appType: 'Web',
+        appTypeIcon: 'mdi-web',
+        tech: [
+            { tecno: 'HTML' },
+            { tecno: 'VueJS' },
+            { tecno: 'MySQL' },
+            { tecno: 'Sweet Alert 2' }
+        ],
+        carousel: [
+            { img: 'cobertura-1.png' },
+            { img: 'cobertura-2.png' },
+            { img: 'cobertura-3.png' },
+            { img: 'cobertura-4.png' },
+            { img: 'cobertura-5.png' },
+            { img: 'cobertura-6.png' },
+        ],
+    },
+});
+>>>>>>> a41cbb7f4e2ffe96c95d150ffce60198515d3685
