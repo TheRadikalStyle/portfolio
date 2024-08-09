@@ -1,26 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
 
 <head>
     <meta charset="utf-8">
     <title>David Ochoa | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
-    <meta name="author" content="David Ochoa" />
+    <meta name="author" content="David Ochoa @TheRadikalStyle" />
 
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="img/briefcase.png" />
     <!-- Material Design Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="dist/bootstrap/5.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/bootstrap/5.3.3/css/bootstrap.min.css" />
     <!-- Portfolio CSS -->
     <link rel="stylesheet" href="dist/portfolio.css" />
     <!-- SlickSlider -->
-    <link rel="stylesheet" type="text/css" href="dist/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="dist/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="dist/slick/1.8.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="dist/slick/1.8.0/slick-theme.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" type="text/css" href="dist/aos/2.3.4/aos.css" />
 
 </head>
 
@@ -34,10 +36,11 @@
     <div id="footer"></div>
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="dist/jquery/jquery-3.6.0.min.js"></script>
-    <script src="dist/bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/jquery/jquery-3.7.1.min.js"></script>
+    <script src="dist/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="dist/portfolio.js"></script>
-    <script type="text/javascript" src="dist/slick/slick.min.js"></script>
+    <script src="dist/slick/slick.min.js"></script>
+    <script src="dist/aos/2.3.4/aos.js"></script>
 
     <!-- Page elements -->
     <script>
@@ -46,27 +49,34 @@
         $(document).ready(function () {
             renderPage("main-content.html");
 
-            $(document).on("click", ".project-title", function(){
-                switch(this.id){
-                    case "title-android-projects": 
+            $(document).on("click", ".project-title", function () {
+                switch (this.id) {
+                    case "title-android-projects":
                         $("#android-projects").toggle();
-                    break;
-                    case "title-ios-projects": 
+                        break;
+                    case "title-ios-projects":
                         $("#iOS-projects").toggle();
-                    break;
-                    case "title-web-projects": 
+                        break;
+                    case "title-web-projects":
                         $("#web-projects").toggle();
-                    break;
+                        break;
                 }
             });
 
         });
     </script>
-    <script>
-        /*
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
+        const firebaseConfig = {
             apiKey: "AIzaSyA2O70S5_PKRVYnkqzsLsUvvl9w-swFlZ8",
             authDomain: "portfolio-github-e7788.firebaseapp.com",
             projectId: "portfolio-github-e7788",
@@ -75,10 +85,10 @@
             appId: "1:1047674600424:web:5cee2141777008a9f2825d",
             measurementId: "G-0LWD16WE49"
         };
+
         // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-        */
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
     </script>
 </body>
 
