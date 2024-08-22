@@ -1,22 +1,16 @@
 <!doctype html>
-<!doctype html>
-<html lang="es-MX">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
-    <title>David Ochoa | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="" />
     <meta name="author" content="David Ochoa @TheRadikalStyle" />
+    <title>Portfolio | David Ochoa</title>
 
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="img/briefcase.png" />
-    <!-- Material Design Icons -->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">-->
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- VueJS -->
-    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>-->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="dist/bootstrap/5.3.3/css/bootstrap.min.css" />
     <!-- Portfolio CSS -->
@@ -24,40 +18,24 @@
     <!-- SlickSlider -->
     <link rel="stylesheet" type="text/css" href="dist/slick/1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="dist/slick/1.8.1/slick/slick-theme.css" />
-
-
-    <script type="importmap">
-        {
-          "imports": {
-            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-          }
-        }
-      </script>
 </head>
 
 <body>
 
-
-
     <div id="header"></div>
-
-    <!-- <div id="content" class="main"></div> -->
-    <main class="container" id="content">
-    </main>
-
-    <div id="app">{{ message }}</div>
-
+    <main class="container" id="content"></main>
     <div id="footer"></div>
+
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
     <script src="dist/jquery/3.7.1/jquery-3.7.1.min.js"></script>
     <script src="dist/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="dist/portfolio.js"></script>
     <script type="text/javascript" src="dist/slick/1.8.1/slick/slick.min.js"></script>
 
-    <!-- Page elements -->
     <script>
         $("#header").load("base/navbar.html");
         $("#footer").load("base/footer.html");
@@ -80,39 +58,6 @@
 
         });
     </script>
-    <script>
-        
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyA2O70S5_PKRVYnkqzsLsUvvl9w-swFlZ8",
-            authDomain: "portfolio-github-e7788.firebaseapp.com",
-            projectId: "portfolio-github-e7788",
-            storageBucket: "portfolio-github-e7788.appspot.com",
-            messagingSenderId: "1047674600424",
-            appId: "1:1047674600424:web:5cee2141777008a9f2825d",
-            measurementId: "G-0LWD16WE49"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-        
-    </script>
-
-
-
-  <script type="module">
-    import { createApp } from 'vue'
-  
-    createApp({
-      data() {
-        return {
-          message: 'Hello Vue!'
-        }
-      }
-    }).mount('#app')
-  </script>
 </body>
 
 </html>
