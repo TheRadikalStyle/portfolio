@@ -18,12 +18,17 @@
     <!-- SlickSlider -->
     <link rel="stylesheet" type="text/css" href="dist/slick/1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="dist/slick/1.8.1/slick/slick-theme.css" />
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="projects.js"></script>
+
 </head>
 
 <body>
 
     <div id="header"></div>
-    <main class="container" id="content"></main>
+    <main id="content"></main>
     <div id="footer"></div>
 
 
@@ -32,9 +37,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
     <script src="dist/jquery/3.7.1/jquery-3.7.1.min.js"></script>
     <script src="dist/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="dist/portfolio.js"></script>
+
     <script type="text/javascript" src="dist/slick/1.8.1/slick/slick.min.js"></script>
+    
 
     <script>
         $("#header").load("base/navbar.html");
@@ -58,6 +64,26 @@
 
         });
     </script>
+
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                projects: projects // Referencia la constante "projects" definida en projects.js
+            }
+        },
+        /*methods: {
+            renderPage(url) {
+                alert(url);
+            },
+        }*/
+    });
+
+    //app.mount('#content'); // Monta la aplicación en el elemento con id "app"
+
+    //console.log(app);
+</script>
+
 </body>
 
 </html>

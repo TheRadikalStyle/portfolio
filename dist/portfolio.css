@@ -1,16 +1,77 @@
-/* Main content */
+/* MAIN CONTENT */
 
-.main{
+main {
     width: 100%;
     height: 100%;
     padding: 16px;
+    margin-top: 70px;
 }
 
+
+/* ICONS */
+
+.bi-icon-android {
+    color: #a4c639;
+}
+
+.bi-icon-ios {
+    color: #a2aaad;
+}
+
+.bi-icon-web {
+    color: #2196f3;
+}
+
+
+/* CARDS */
+
+.card {
+    padding: 0px 16px 8px;
+    border-radius: 8px;
+}
+
+.card-icon {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+}
+
+.card-icon img {
+    margin: 0 auto;
+    display: block;
+    max-width: 150px;
+    padding: 16px;
+}
+
+.card-footer-icons {
+    min-width: 30px;
+    max-width: 90px;
+    background-color: #eceff1; /* Material Blue Grey 200 */
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*
 .navbar-brand{
     cursor: pointer;
 }
 
+*/
+
 /* Project type title */
+/*
 .project-title{
     font-size: 1.5rem;
 }
@@ -23,26 +84,17 @@
 #title-web-projects{
     cursor: pointer;
 }
+*/
 
-.mdi-android{
-    color: #a4c639;
-}
 
-.mdi-apple{
-    color: #a2aaad;
-}
-
-.mdi-web{
-    color: #2196f3; /* Material Blue 500 */
-}
 
 /* Cards */
-
+/*
 .card{
     margin: 8px;
     border-radius: 16px;
     padding: 8px;
-    border-color: #bdbdbd; /* Material Gray 400 */
+    border-color: #bdbdbd;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
@@ -75,7 +127,7 @@
     position: relative;
     width: auto;
     height: auto;
-    background-color: #F5F5F5; /* Material Gray 100 */
+    background-color: #F5F5F5;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
@@ -117,7 +169,11 @@
     padding: 8px;
 }
 
-  /* Projects pages */
+*/
+
+/* Projects pages */
+
+/*
 .apps-title{
     text-align: left;
     margin-bottom: 16px;
@@ -141,46 +197,47 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+    */
 
 
 /* Screen size max 650px */
 @media only screen and (max-width: 650px) {
-    .card-body{
+    /*.card-body {
         display: inline-flex;
-    }
+    }*/
 
     /*.card > .card-body > .row{
         width: 100%;
         background-color: red;
     }*/
 
-    #row-card-img{
+    #row-card-img {
         display: none;
     }
 
-    #row-card-title{
+    #row-card-title {
         width: 70%;
         margin-top: auto;
         margin-bottom: auto;
     }
 
-    #row-card-button{
+    #row-card-button {
         width: 30%;
         margin: auto;
     }
 
-    .project-title{
+    .project-title {
         text-align: center;
     }
 
-    .slick-carousel{
+    .slick-carousel {
         width: 80%;
     }
 }
 
 /* Screen size max 1000px */
 @media only screen and (max-width: 1000px) {
-    .slick-carousel{
+    .slick-carousel {
         width: 70%;
     }
 }
