@@ -8,7 +8,7 @@ $(function () {
     });
 });
 
-function renderPage(pageToRender) {
+function renderIndexPage(pageToRender) {
     //$("#content").load(pageToRender);
     $.get(pageToRender, function (data) {
         $("#content").html(data);

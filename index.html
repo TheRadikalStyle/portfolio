@@ -22,6 +22,47 @@
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="projects.js"></script>
+    <script>
+        const createAppInstance = () => {
+
+            return Vue.createApp({
+                data() {
+                    return {
+                        project: null,
+                        projects: projects // Referencia la constante "projects" definida en projects.js
+                    }
+                },
+                mounted() {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const projectData = urlParams.get('project');
+                    if (projectData) {
+                        this.project = JSON.parse(decodeURIComponent(projectData));
+                    }
+                },
+                methods: {
+                    renderPage(pageToRender, project) {
+                        // Serializar el objeto project a una cadena JSON y codificarla para incluirla en la URL
+                        const projectData = encodeURIComponent(JSON.stringify(project));
+                        const fullUrl = `${pageToRender}?project=${projectData}`;
+
+                        // Cargar la nueva página
+                        $.get(fullUrl, function (data) {
+                            $("#content").html(data);
+                            console.log("Load was performed.");
+                        })
+                            .done(function () {
+                                console.log("DONE");
+                            })
+                            .fail(function () {
+                                console.log("FAIL");
+                            });
+
+                        return false;
+                    }
+                }
+            });
+        };
+    </script>
 
 </head>
 
@@ -40,13 +81,14 @@
     <script src="dist/portfolio.js"></script>
 
     <script type="text/javascript" src="dist/slick/1.8.1/slick/slick.min.js"></script>
-    
+
 
     <script>
+
         $("#header").load("base/navbar.html");
         $("#footer").load("base/footer.html");
         $(document).ready(function () {
-            renderPage("main-content.html");
+            renderIndexPage("main-content.html");
 
             $(document).on("click", ".project-title", function () {
                 switch (this.id) {
@@ -64,25 +106,6 @@
 
         });
     </script>
-
-<script>
-    const app = Vue.createApp({
-        data() {
-            return {
-                projects: projects // Referencia la constante "projects" definida en projects.js
-            }
-        },
-        /*methods: {
-            renderPage(url) {
-                alert(url);
-            },
-        }*/
-    });
-
-    //app.mount('#content'); // Monta la aplicación en el elemento con id "app"
-
-    //console.log(app);
-</script>
 
 </body>
 

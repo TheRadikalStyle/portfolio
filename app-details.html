@@ -1,0 +1,21 @@
+<section id="app-details">
+    <div v-if="project">
+        <h1>{{ project.name }}</h1>
+        <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid">
+        <p>{{ project.summary }}</p>
+        <!-- Muestra más datos del proyecto aquí -->
+    </div>
+    <div v-else>
+        <p>No se ha encontrado información sobre el proyecto.</p>
+    </div>
+</section>
+
+<script>
+
+// Desmontar la instancia anterior si es necesario
+if (app && app.unmount) {
+    app.unmount();
+}
+    app = createAppInstance();
+    app.mount('#app-details');
+</script>
