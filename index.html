@@ -23,6 +23,9 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="projects.js"></script>
     <script>
+        
+        let app = null;
+
         const createAppInstance = () => {
 
             return Vue.createApp({
@@ -87,23 +90,9 @@
 
         $("#header").load("base/navbar.html");
         $("#footer").load("base/footer.html");
+
         $(document).ready(function () {
             renderIndexPage("main-content.html");
-
-            $(document).on("click", ".project-title", function () {
-                switch (this.id) {
-                    case "title-android-projects":
-                        $("#android-projects").toggle();
-                        break;
-                    case "title-ios-projects":
-                        $("#iOS-projects").toggle();
-                        break;
-                    case "title-web-projects":
-                        $("#web-projects").toggle();
-                        break;
-                }
-            });
-
         });
     </script>
 
