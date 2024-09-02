@@ -1,23 +1,40 @@
 <style>
-    
+    .card-project-platforms {
 
-    .card-project-platforms{
-
-        background-color: cadetblue;
+        background-color: rgba(85, 85, 85, 0.6);
+        /* Material Blue Grey 800 */
         border-radius: 16px;
         width: 18rem;
+
+        padding: 8px;
+
+        color: white;
     }
 
-    .app-welcome{
+    .app-welcome {
 
         min-height: 150px;
         color: white;
     }
-    .app-welcome img{
+
+    .app-welcome img {
         width: 80%;
         max-width: 100px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .project-summary {
+
+        padding: 8px;
+        text-justify: distribute;
+        color: white;
+    }
+
+    .project-screenshots {
+
+        padding: 8px;
+        color: white;
     }
 </style>
 
@@ -25,33 +42,52 @@
     <div v-if="project">
 
 
-        <div class="row mb-2 app-welcome">
-            <div class="col-md-3 text-center d-flex align-items-center">
-                <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid">
+        <div class="container">
+            <div class="row mb-2 app-welcome">
+                <div class="col-md-3 text-center d-flex align-items-center">
+                    <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid">
+                </div>
+                <div class="col-md d-flex align-items-center">
+                    <h3>{{ project.name }}</h3>
+                </div>
             </div>
-            <div class="col-md d-flex align-items-center">
-                <h3>{{ project.name }}</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="card card-project-platforms">
-                <div class="card-body">
-                    
-                    <p>Plataformas</p>
-                    <div class="d-flex gap-2">
-                        <i v-if="project.platforms.android" class="bi bi-android bi-icon-android" title="Proyecto Android" aria-label="Proyecto Android"></i>
-                        <i v-if="project.platforms.ios" class="bi bi-apple bi-icon-ios" title="Proyecto iOS" aria-label="Proyecto iOS"></i>
-                        <i v-if="project.platforms.web" class="bi bi-browser-chrome bi-icon-web" title="Proyecto Web" aria-label="Proyecto Web"></i>
+    
+            <div class="row">
+                <div class="card card-project-platforms">
+                    <div class="card-body">
+    
+                        <p>Plataformas</p>
+                        <div class="d-flex gap-2">
+                            <i v-if="project.platforms.android" class="bi bi-android bi-icon-android"
+                                title="Proyecto Android" aria-label="Proyecto Android"></i>
+                            <i v-if="project.platforms.ios" class="bi bi-apple bi-icon-ios" title="Proyecto iOS"
+                                aria-label="Proyecto iOS"></i>
+                            <i v-if="project.platforms.web" class="bi bi-browser-chrome bi-icon-web" title="Proyecto Web"
+                                aria-label="Proyecto Web"></i>
+                        </div>
+    
                     </div>
-
                 </div>
             </div>
         </div>
 
-        
-        <p>{{ project.summary }}</p>
-        <!-- Muestra más datos del proyecto aquí -->
+
+        <section class="container project-summary mt-4">
+            <p>{{ project.summary }}</p>
+        </section>
+
+
+        <section class="container project-screenshots mt-4">
+            <h3>Screenshots</h3>
+
+            <div class="slick-gallery-fade mt-4">
+                <div v-for="screenshots in project.images">
+                    <img v-bind:src="'img/works/full/' + screenshots" class="img-fluid" />
+                </div>
+            </div>
+
+        </section>
+
 
 
 
@@ -73,4 +109,17 @@
     app = createAppInstance();
     app.mount('#app-details');
     */
+
+    $(document).ready(function () {
+
+        $('.slick-gallery-fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+        console.log("slick");
+    });
 </script>
