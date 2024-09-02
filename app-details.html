@@ -1,8 +1,5 @@
 <style>
-    .project-img{
-        width: 80%;
-        max-width: 100px;
-    }
+    
 
     .card-project-platforms{
 
@@ -10,15 +7,27 @@
         border-radius: 16px;
         width: 18rem;
     }
+
+    .app-welcome{
+
+        min-height: 150px;
+        color: white;
+    }
+    .app-welcome img{
+        width: 80%;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 
 <section id="app-details">
     <div v-if="project">
 
 
-        <div class="row mb-2">
-            <div class="col-md-3 text-center">
-                <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid project-img">
+        <div class="row mb-2 app-welcome">
+            <div class="col-md-3 text-center d-flex align-items-center">
+                <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid">
             </div>
             <div class="col-md d-flex align-items-center">
                 <h3>{{ project.name }}</h3>

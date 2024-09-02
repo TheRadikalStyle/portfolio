@@ -4,7 +4,7 @@ const projects = [
         name: 'DashrX',
         url: function(){ renderPage("apps/index-dashrx.html"); },
         thumb: 'android-dashrx.png',
-        platforms: { android: true, ios: true, web: true },
+        platforms: { android: true, ios: false, web: false },
         downloadStore: { playstore: null, appstore: null },
         appType: 'Aplicación nativa',
         appTypeIcon: 'mdi-cellphone',

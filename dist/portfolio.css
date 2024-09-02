@@ -1,7 +1,14 @@
 /* MAIN CONTENT */
 
-html, body, footer{
+html,
+body,
+footer {
     font-family: "Roboto", system-ui;
+}
+
+.bg-grey{
+    /* Material Grey 9 */
+    background-color: #212121;
 }
 
 main {
@@ -12,11 +19,13 @@ main {
 }
 
 body {
-    background: rgb(18, 0, 36);
-    background: linear-gradient(180deg,
-            rgba(18, 0, 36, 1) 0%,
-            rgba(70, 9, 121, 1) 35%,
-            rgba(160, 0, 255, 1) 100%);
+    background: rgb(33,33,33);
+    background: linear-gradient(
+        180deg, 
+        rgba(33,33,33,1) 0%, 
+        rgba(9,9,121,1) 84%, 
+        rgba(69,39,160,1) 100%
+        );
 }
 
 
@@ -37,17 +46,11 @@ body {
 
 /* CARDS */
 
-.card {
+.card-body {
     padding: 0px 16px 8px;
-    border-radius: 8px;
 }
 
-.card-icon {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur(7.5px);
-}
+
 
 .card-icon img {
     margin: 0 auto;
@@ -66,32 +69,25 @@ body {
 }
 
 .card-title {
+
     text-align: center;
+    text-wrap: pretty;
 }
 
 .card-main-page {
 
-    color: white;
-
     /* From https://css.glass */
-    background: rgba(70, 9, 121, 0.7);
-    border-radius: 16px;
+    background: rgba(236, 217, 243, 0.6);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.8px);
-    -webkit-backdrop-filter: blur(8.8px);
-    border: 1px solid rgba(70, 9, 121, 0.1);
-
-
-    /* From https://css.glass */
-    /*background: rgba(64, 62, 65, 0.6);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.8px);
--webkit-backdrop-filter: blur(8.8px);
-border: 1px solid rgba(64, 62, 65, 0.1);
-*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
+.card-main-page img{
+
+    background-color: #fafafa; /* Material Grey 50 */
+    padding: 32px;
+}
 
 
 

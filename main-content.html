@@ -5,12 +5,10 @@
         <div class="col" v-for="project in projects" :key="project.id">
             <div class="card card-main-page">
 
-                <div class="card-icon">
-                    <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid">
-                </div>
+                <img :src="'img/works/thumbs/' + project.thumb" class="card-img-top">
 
                 <div class="card-body">
-                    <p class="card-title mb-2">{{ project.name }}</p>
+                    <p class="card-title mt-2 mb-2">{{ project.name }}</p>
 
                     <div class="card-footer-icons">
                         <div class="d-flex gap-2">
