@@ -1,10 +1,54 @@
+<style>
+    .project-img{
+        width: 80%;
+        max-width: 100px;
+    }
+
+    .card-project-platforms{
+
+        background-color: cadetblue;
+        border-radius: 16px;
+        width: 18rem;
+    }
+</style>
+
 <section id="app-details">
     <div v-if="project">
-        <h1>{{ project.name }}</h1>
-        <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid">
+
+
+        <div class="row mb-2">
+            <div class="col-md-3 text-center">
+                <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid project-img">
+            </div>
+            <div class="col-md d-flex align-items-center">
+                <h3>{{ project.name }}</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card card-project-platforms">
+                <div class="card-body">
+                    
+                    <p>Plataformas</p>
+                    <div class="d-flex gap-2">
+                        <i v-if="project.platforms.android" class="bi bi-android bi-icon-android" title="Proyecto Android" aria-label="Proyecto Android"></i>
+                        <i v-if="project.platforms.ios" class="bi bi-apple bi-icon-ios" title="Proyecto iOS" aria-label="Proyecto iOS"></i>
+                        <i v-if="project.platforms.web" class="bi bi-browser-chrome bi-icon-web" title="Proyecto Web" aria-label="Proyecto Web"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
         <p>{{ project.summary }}</p>
         <!-- Muestra más datos del proyecto aquí -->
+
+
+
     </div>
+
+
     <div v-else>
         <p>No se ha encontrado información sobre el proyecto.</p>
     </div>
@@ -13,9 +57,11 @@
 <script>
 
     // Desmontar la instancia anterior si es necesario
+    /*
     if (app && app.unmount) {
         app.unmount();
     }
     app = createAppInstance();
     app.mount('#app-details');
+    */
 </script>

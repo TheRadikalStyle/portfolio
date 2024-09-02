@@ -3,7 +3,7 @@
 
     <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col" v-for="project in projects" :key="project.id">
-            <div class="card">
+            <div class="card card-main-page">
 
                 <div class="card-icon">
                     <img :src="'img/works/thumbs/' + project.thumb" class="img-fluid">
@@ -14,14 +14,16 @@
 
                     <div class="card-footer-icons">
                         <div class="d-flex gap-2">
-                            <i v-if="project.platforms.android" class="bi bi-android bi-icon-android"></i>
-                            <i v-if="project.platforms.ios" class="bi bi-apple bi-icon-ios"></i>
-                            <i v-if="project.platforms.web" class="bi bi-browser-chrome bi-icon-web"></i>
+                            <i v-if="project.platforms.android" class="bi bi-android bi-icon-android" title="Proyecto Android" aria-label="Proyecto Android"></i>
+                            <i v-if="project.platforms.ios" class="bi bi-apple bi-icon-ios" title="Proyecto iOS" aria-label="Proyecto iOS"></i>
+                            <i v-if="project.platforms.web" class="bi bi-browser-chrome bi-icon-web" title="Proyecto Web" aria-label="Proyecto Web"></i>
                         </div>
                     </div>
 
-                    <a class="btn mt-2" v-on:click="renderPage('app-details.html', project[project.id])">Ver más <i
-                            class="bi bi-arrow-right"></i></a>
+                    <a class="btn mt-2" v-on:click="renderPage('app-details.html', project)">
+                        Ver más 
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
 
             </div>

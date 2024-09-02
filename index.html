@@ -18,12 +18,16 @@
     <!-- SlickSlider -->
     <link rel="stylesheet" type="text/css" href="dist/slick/1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="dist/slick/1.8.1/slick/slick-theme.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="projects.js"></script>
     <script>
-        
+
         let app = null;
 
         const createAppInstance = () => {
@@ -36,28 +40,44 @@
                     }
                 },
                 mounted() {
+
                     const urlParams = new URLSearchParams(window.location.search);
                     const projectData = urlParams.get('project');
+
+                    console.log("urlparamas");
+                    console.log(urlParams);
+
+                    console.log("projectData");
+                    console.log(projectData);
+
                     if (projectData) {
                         this.project = JSON.parse(decodeURIComponent(projectData));
                     }
                 },
                 methods: {
+
                     renderPage(pageToRender, project) {
-                        // Serializar el objeto project a una cadena JSON y codificarla para incluirla en la URL
-                        const projectData = encodeURIComponent(JSON.stringify(project));
-                        const fullUrl = `${pageToRender}?project=${projectData}`;
 
                         // Cargar la nueva página
-                        $.get(fullUrl, function (data) {
+                        $.get(pageToRender, function (data) {
                             $("#content").html(data);
-                            console.log("Load was performed.");
+
+                            const detailsApp = Vue.createApp({
+                                data() {
+                                    return {
+                                        project: project // Pasar los datos del proyecto
+                                    };
+                                }
+                            });
+                            detailsApp.mount('#app-details');
+
+                            //console.log("Load was performed.");
                         })
                             .done(function () {
-                                console.log("DONE");
+                                //console.log("DONE");
                             })
                             .fail(function () {
-                                console.log("FAIL");
+                                //console.log("FAIL");
                             });
 
                         return false;
